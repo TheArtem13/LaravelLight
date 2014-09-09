@@ -1,0 +1,62 @@
+body{
+    margin: 0px;
+}
+p{
+    margin: 0px;
+}
+.container{
+    background-image: url("../images/Background.png");
+    background-repeat: no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+    width: 100%;
+    height: 950px;
+    padding: 0px;
+}
+.centerContent{
+    width: 1000px;
+    margin: auto;
+    position: relative;
+}
+.Menu{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 999;
+}
+.MenuHeader{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3ggSDh4nVVWklAAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAHgSURBVDjLbVRLohshDJM/TO5/w16gXSeATReMHKavs0kAI8uysPz5/WsBQEQAANZaMDNkJtZaUFWstRAREBEAgLtDRBARFc//SpA5JzIT7l7gPIsItNaw1gIAZGbFMImIQETg7/cHANCaQ1WRmQVGIHfHnBPuXudkf36ZCW/Na6P3AbNd4lrrwYp7lIAAZAYAqgo1swpQlcp67m8wlK687O4FzDt66vW/UtZayEyYaTXiLFtEqom9DzgzRkSxOlnwwin+KcEYE6053J1k9A74WkZEqkFmVkBMVOWpwn2fjzGQmVDqIoKHn8jw8+kP8WkjSuHuJZGqboY06pwTqlqa7AApSQioqui9w8wqYWttJ2AmlntmPjVjzAbeJHrvlZBaKxcEuGljjIHeR+3xa62VPDzjyxnj7jLbn5k/3jB/r+tCRDz0Iyifq6rCqddpk7NENoSanYxPCxUBLr7dlsczo5nNDHPOshSBxphVXURs29ToUa1OU9MxJsxs6+OOiMSccUyb7+hrre23LCJ4vV437R0w57wNrPcFubtvEAEy12M2lvZsxPv9qQssleWdxhcRtNZgpiUDfQgA5YfX6/phEa45E6kvSfw7iAuQXTwnyXVdpSkN3Xt/AIgIrut6uOIv9aXy5yWjf1MAAAAASUVORK5CYII=);
+    background-repeat: repeat;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 10px;
+    /*z-index: 999;*/
+}
+.Content{
+    z-index:500 ;
+    text-align: center;
+}
+
+#SiteLogo{
+    position: absolute;
+    /*top: 0px;
+    left: 100px;*/
+   /* width: 160px;
+    height: 25px;*/
+}
+#SiteBasket{
+    position: absolute;
+   /* width: 60px;
+    height: 25px;*/
+    top: 0px;
+    right: 170px;
+}
+#SiteLogin{
+    position: absolute;
+   /* width: 120px;
+    height: 25px;*/
+    top: 0px;
+    right: 0px;
+}

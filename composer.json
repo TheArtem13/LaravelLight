@@ -5,5 +5,8 @@
 	    "models",
 	    "views"
 	  ]
-	}
+	},
+    "require": {
+        "codesleeve/asset-pipeline": "dev-master"
+    }
 }
