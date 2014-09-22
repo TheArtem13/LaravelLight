@@ -9,31 +9,76 @@ home.css
 
 @section('content')
 <div>
-    <h1>Создай свою фотокнигу on-line!</h1>
-    <span>
-        Ценность, которую можно подержать в руках хотя бы мгновение, всегда реальна. Фотографии, оставленные и забытые
-        в электронных архивах и социальных сетях, могли бы рассказать нам об этом, будь они напечатаны на бумаге.
-        Воспоминания в картинках – как любимые книги, их сюжеты актуальны, пока кто-тоберет с полки и листает том в
-        надежном переплете, снова и снова возвращаясь к лучшим отрывкам.
+    <div class="centerContent" style="margin-top: 70px">
+        <!--<h1>Печать фотографий высокого качества не выходя из дома</h1>-->
+        <h1>
+            <span>On-line печать</span> фотографий, фотокниг, открыток и календарей
+            <small>Напечатай свои фотографии не выходя из дома с помощью нашего on-line редактора(?)</small>
+        </h1>
+        <div>
 
-        События и лица в современном мире так быстро сменяют друг друга, что мы едва успеваем нажать на спуск.
-        Моменты, осознание ценности которых приходит лишь со временем, уступают место следующим раньше,
-        чем мы успеваем прожить их. Прошлое, не успевшее побыть настоящим в бурном информационном потоке,
-        обесценивает будущее.
-
-        Вот почему так важно по-прежнему печатать фотографии, собирать их в долговечные красочные фотокниги,
-        украшать ими дом и дарить на память, превращая в фотомагниты, фотокалендари, постеры и плакаты.
-        Вот зачем мы придумали «Альбомикс» – сервис по созданию фотокниг онлайн,
-        для которого ценно каждое мгновение жизни.
-    </span>
-    <br>
-    <div class="centerContent">
-        <div class="ProductList">
 
         </div>
+    </div>
+
+    <div class="ProductList"  style="margin-top: 15px">
+        <div class="centerContent">
+        <ul style="list-style-type: none;" id="ProductSelector">
+            <li>
+                <a href="{{{ URL::to('photobook')}}}">
+                    <div>
+                        <h2>Фотокнига</h2>
+                        <img class="menuImg" src="../public/images/Book.png">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <div>
+                    <h2>Фотографии</h2>
+                    <img class="menuImg" src="../public/images/Photo.png">
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h2>Открытка</h2>
+                    <img class="menuImg" src="../public/images/PostCard.png">
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h2 style="margin-bottom: 5px !IMPORTANT;">Настенный <br/>календарь</h2>
+                    <img class="menuImg" src="../public/images/WallCalendar.png">
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h2>Настольный <br/>календарь</h2>
+                    <img style="height: 80px; margin-top: 20px;" class="menuImg" src="../public/images/TableCalendar.png">
+                </div>
+            </li>
+        </ul>
+        </div>
+    </div>
+    <div class="centerContent">
+        <div id="description">
+            <h1>
+                <p>
+                    Тут текст, который меняется в зависимости от выбранного продукта
+                    <br/>
+                    И будет описывать какой он крутой
+                </p>
+            </h1>
+        </div>
+        <div id="orderBlock">
+            <input type="button" value="Заказать">
+        </div>
+    <div class="centerContent">
+
+
+    <div class="centerContent">
         <div class="BottomMenu MenuHeader">
-            <a>О нас</a>
-            <a>Обратная связь</a>
+            <a class="bottommenu">О нас</a>
+            <a class="bottommenu">Обратная связь</a>
 
         </div>
     </div>

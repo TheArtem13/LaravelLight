@@ -4,12 +4,12 @@
     <head>
         <meta charset="utf-8">
         <title>@yield('title')</title>
-        <link rel="stylesheet" href="/public/styles/main.css">
         <link rel="stylesheet" href="/public/styles/core/bootstrap.css">
         <link rel="stylesheet" href="/public/styles/core/bootstrap-theme.css">
-        <link rel="stylesheet" href="/public/styles/@yield('styleFile')">
         <script type="text/javascript" src="/public/scripts/core/jquery-2.1.1.js" ></script>
         <script type="text/javascript" src="/public/scripts/core/bootstrap.js" ></script>
+        <link rel="stylesheet" href="/public/styles/main.css">
+        <link rel="stylesheet" href="/public/styles/@yield('styleFile')">
     </head>
     <body>
     <div class="Menu">
@@ -26,37 +26,10 @@
         </div>
     </div>
         <div class="container">
-            <div class="centerContent" style="padding-top: 50px;">
                 <div class="Content">
                     @yield('content')
                 </div>
-            </div>
         </div>
     </body>
-    <script>
-            var clientWidth = 0, clientHeight = 0;
-            var int1=0;
-            if( typeof( window.innerWidth ) == 'number' ) {
-                //Non-IE
-                clientWidth = window.innerWidth;
-                clientHeight = window.innerHeight;
-                int1=1;
-            } else if( document.documentElement && ( document.documentElement.clientWidth ||
-
-                document.documentElement.clientHeight ) ) {
-                //IE 6+ in 'standards compliant mode'
-                clientWidth = document.documentElement.clientWidth;
-                clientHeight = document.documentElement.clientHeight;
-                int1=2;
-            } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
-                //IE 4 compatible
-                clientWidth = document.body.clientWidth;
-                clientHeight = document.body.clientHeight;
-                int1=3;
-            }
-            var container = $(".container");
-            container.width(clientWidth);
-            container.height(clientHeight);
-    </script>
     <?php //echo Asset::scripts(); ?>
 </html>

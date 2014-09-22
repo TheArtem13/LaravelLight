@@ -11,9 +11,10 @@ p{
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
     background-size: 100%; /* Современные браузеры */
-    width: 100%;
-    height: 950px;
-    padding: 0px;
+    width: 100% !important;
+    /*height: 950px;*/
+    padding: 0 !important;
+    min-height: 900px;
 }
 .centerContent{
     width: 1000px;
@@ -59,4 +60,40 @@ p{
     height: 25px;*/
     top: 0px;
     right: 0px;
+}
+
+h1 {
+    font: normal 2.2em Georgia, "Times New Roman", Times, serif !important;
+    margin: 0 0 20px !IMPORTANT;
+    padding: 10px 0 !IMPORTANT;
+    font-weight: bold !IMPORTANT;
+    text-align: center !IMPORTANT;
+    text-shadow: 1px 1px 1px #ccc !IMPORTANT; /*--Не поддерживается IE--*/
+    color: #5B5448 !IMPORTANT;
+}
+h1 span {
+    color: #F64803 !IMPORTANT;
+    font-weight: bold !IMPORTANT;
+}
+h1 small {
+       font-size: 0.5em !IMPORTANT;
+       /*text-transform: uppercase;*/
+       color: #999 !IMPORTANT;
+       font-family: Arial, Helvetica, sans-serif !IMPORTANT;
+       text-shadow: none !IMPORTANT;
+       display: block !IMPORTANT; /*--Выделяем для тэга small отдельную линию--*/
+   }
+p {
+    font-size: medium;
+    text-shadow: none;
+}
+
+h2 {
+    font: normal 1.3em Georgia, "Times New Roman", Times, serif !important;
+    margin: 0 0 20px !IMPORTANT;
+    padding: 10px 0 !IMPORTANT;
+    font-weight: bold !IMPORTANT;
+    text-align: center !IMPORTANT;
+    text-shadow: 1px 1px 1px #ccc !IMPORTANT; /*--Не поддерживается IE--*/
+    color: #5B5448 !IMPORTANT;
 }
